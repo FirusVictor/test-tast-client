@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a3f63ee-d855-4577-bfab-d1cd7af5aea4" name="Default Changelist" comment="add result component">
+    <list default="true" id="3a3f63ee-d855-4577-bfab-d1cd7af5aea4" name="Default Changelist" comment="review and refactor">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Lottery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Lottery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Progress.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Progress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Question.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Result.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Result.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/happy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/happy.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/sad.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/sad.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Welcome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Welcome.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,22 +42,50 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../public_html/server" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components" />
-    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://test-task" />
+          <option name="urlPath" value="server" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -63,8 +99,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="Jest.result has true">
+    <configuration name="result has true" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/App.test.js" />
+      <test-names>
+        <test-name value="result has true" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="npm" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -81,7 +141,15 @@
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
       <item itemvalue="npm.npm start" />
+      <item itemvalue="npm.build" />
+      <item itemvalue="Jest.result has true" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.result has true" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -95,7 +163,9 @@
       <updated>1565383329769</updated>
       <workItem from="1565383331516" duration="4602000" />
       <workItem from="1565550963928" duration="3094000" />
-      <workItem from="1565639577178" duration="14264000" />
+      <workItem from="1565639577178" duration="20725000" />
+      <workItem from="1565665904396" duration="160000" />
+      <workItem from="1565680374575" duration="9327000" />
     </task>
     <task id="LOCAL-00001" summary="complete welcome and questions components">
       <created>1565656335035</created>
@@ -104,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1565656335035</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add result component">
+      <created>1565658343783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565658343783</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add component for test chance">
+      <created>1565693680790</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565693680790</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +210,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="complete welcome and questions components" />
     <MESSAGE value="add result component" />
-    <option name="LAST_COMMIT_MESSAGE" value="add result component" />
+    <MESSAGE value="add component for test chance" />
+    <MESSAGE value="review and refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="review and refactor" />
   </component>
 </project>

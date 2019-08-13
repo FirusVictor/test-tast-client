@@ -6,63 +6,62 @@ import sad from '../images/sad.svg';
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 const styles = () => ({
-    success: {
-        color: '#4CAF50'
-    },
-    fail: {
-        color: '#f44336'
-    }
+  success: {
+    color: '#4CAF50'
+  },
+  fail: {
+    color: '#f44336'
+  }
 });
 
 class Result extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            result: false,
-            loading: true
-        };
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      result: false,
+      loading: true
+    };
+  }
 
-    componentDidMount() {
-        fetch('http://test-task/server')
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    this.setState({
-                        loading: false,
-                        result: result.result
-                    });
-                },
-                (error) => {
-                    this.setState({
-                        loading: false,
-                        error
-                    });
-                }
-            )
-    }
-
-    render() {
-        const {classes} = this.props;
-        let result = this.state.result;
-        let img = result ? happy : sad;
-        let content = [];
-        if(this.state.loading){
-            content.push(<CircularProgress /> );
-        }else{
-            content.push(<Typography className={result ? classes.success : classes.fail} variant="h4" gutterBottom>
-                {result ? 'Поздравляем!!!' : 'В следующий раз повезет...'}
-            </Typography>);
-            content.push(<img src={img} alt={img} className='emoji'/>);
+  componentDidMount() {
+    fetch('http://test-task/server')
+      .then(res => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            loading: false,
+            result: result.result
+          });
+        },
+        (error) => {
+          this.setState({
+            loading: false,
+            error
+          });
         }
-        return (
-            <Card>
-                <CardContent>
-                    {content}
-                </CardContent>
-            </Card>
-        );
+      )
+  }
+
+  render() {
+    const {classes} = this.props;
+    let img = this.state.result ? happy : sad;
+    let content = [];
+    if (this.state.loading) {
+      content.push(<CircularProgress/>);
+    } else {
+      content.push(<Typography className={this.state.result ? classes.success : classes.fail} variant="h4" gutterBottom>
+        {this.state.result ? 'Поздравляем!!!' : 'В следующий раз повезет...'}
+      </Typography>);
+      content.push(<img src={img} alt={img} className='emoji'/>);
     }
+    return (
+      <Card>
+        <CardContent>
+          {content}
+        </CardContent>
+      </Card>
+    );
+  }
 }
 
 export default withStyles(styles)(Result);
