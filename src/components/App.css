@@ -19,3 +19,9 @@ body{
 .MuiButtonGroup-root.controls{
     margin-top: 1em;
 }
+.emoji{
+    max-width: 150px;
+}
+.emoji{
+    fill: #00ff00;
+}
