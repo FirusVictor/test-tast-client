@@ -1,0 +1,21 @@
+body{
+    background: #efefef;
+}
+.App{
+    padding-top: 3em;
+    text-align: center;
+}
+.main-wrap{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+.slider{
+    margin-top: 2em;
+}
+.steps{
+    margin-bottom: 0.5em;
+}
+.MuiButtonGroup-root.controls{
+    margin-top: 1em;
+}
