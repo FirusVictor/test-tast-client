@@ -34,6 +34,7 @@ export default class Lottery extends Component {
     }
 
     render() {
+        //выбов компонентов для рендера в зависимости от текущего вопроса
         let render =[
             <Progress
             steps={this.state.questions}
@@ -53,11 +54,9 @@ export default class Lottery extends Component {
         if (this.state.currentQuestion > this.state.questions.length)
             render = <Result/>;
 
-
         return (
             <div className='main-wrap'>
-                {/*{render}*/}
-                <Result />
+                {render}
             </div>
         );
     }
